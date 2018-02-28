@@ -470,6 +470,7 @@ main(int argc, char **argv)
 					"MUE : Monetary Unit : 7\n"
 					"MYRIAD : Myriadcoin : M\n"
 					"MZC : Mazacoin : M\n"
+					"NAH : Strayacoin : S\n"     //Added Strayacoin
 					"NEET : NEETCOIN : N\n"
 					"NEOS : Neoscoin : S\n"
 					"NLG : Gulden : G\n"
@@ -1325,6 +1326,14 @@ main(int argc, char **argv)
 					"Generating NEETCOIN Address\n");
 					addrtype = 53;
 					privtype = 181;
+					break;
+			}
+			else						//Add Strayacoin
+			if (strcmp(optarg, "NAH")== 0) {
+				fprintf(stderr,
+					"Generating Strayacoin Address\n");
+					addrtype = 63;
+					privtype = 63;
 					break;
 			}
 			break;
